@@ -30,3 +30,23 @@ This simulator computes photon trajectories in Schwarzschild spacetime, demonstr
 The geodesic equations are solved numerically:
 ```math
 \frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0
+
+
+
+🚀 Features
+Interactive PyQT5 interface
+
+Real-time parameter control:
+
+Black hole mass
+
+Viewing angle (0°-90°)
+
+Disk temperature profile
+
+Multiple visualization modes
+
+Export simulation data
+
+🛠️ Installation
+Clone repository:
