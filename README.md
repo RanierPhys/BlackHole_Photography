@@ -1,76 +1,60 @@
-# Black Hole Photography Simulator
+# 🕳️ Black Hole Photography Simulator
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <p align="center">
   <img src="images/simulation_example.png" width="70%">
-  <br><em>Simulated view of a Schwarzschild black hole with a thin accretion disk</em>
+  <br><em>Simulated view of a Schwarzschild black hole with thin accretion disk</em>
 </p>
-
-## Table of Contents
-- [🌌 Physics Background](#-physics-background)
-- [🚀 Features](#-features)
-- [🛠️ Installation](#-installation)
-- [💻 Usage](#-usage)
-- [📖 Manual](#-manual)
-- [📁 Repository Structure](#-repository-structure)
-- [🖼️ Example Results](#-example-results)
-- [👥 Team](#-team)
-- [📜 License](#-license)
 
 ---
 
-## 🌌 Physics Background
+## 📚 Table of Contents
+- [🧠 Physics Background](#-physics-background)
+- [🚀 Features](#-features)
+- [🛠️ Installation](#-installation)
+- [▶️ Usage](#-usage)
+- [📁 Repository Structure](#-repository-structure)
+- [📷 Example Results](#-example-results)
+- [👨‍💻 Team](#-team)
+- [📄 License](#-license)
+
+---
+
+## 🧠 Physics Background
 
 This simulator computes photon trajectories in Schwarzschild spacetime, demonstrating:
 
 - **Light bending** near the event horizon  
-- **Photon sphere** at *r = 3GM/c²*  
-- **Relativistic effects**, including:
+- **Photon sphere** at \( r = 3GM/c^2 \)  
+- **Relativistic effects**:
   - Doppler beaming  
   - Gravitational redshift  
 - **Thin accretion disk** physics (Novikov–Thorne model)
 
-The geodesic equations are solved numerically:
-
+We solve the geodesic equations numerically:
 ```math
 \frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0
 ```
 
-A more detailed derivation of the equations of motion, contours, fluxes and redshift effects is available in the [Theory](./docs/Theory.md) section.
+For detailed theory and derivations, check the [📄 Theory documentation](docs/Theory.md).
 
 ---
 
 ## 🚀 Features
 
-- Interactive **PyQt5** interface  
-- Real-time control of simulation parameters:
-  - Black hole mass  
-  - Viewing angle (0°–90°)  
+- Interactive **PyQt5** GUI  
+- Real-time control of parameters:
+  - Black hole mass
+  - Viewing angle (0°–90°)
   - Disk temperature profile  
 - Multiple visualization modes  
-- Export simulation data (images, frames, etc.)
+- Export simulation data and results  
 
 ---
 
 ## 🛠️ Installation
-
-### Prerequisites
-
-To run the simulator, make sure you have Python 3.8+ and install the required packages:
-
-```bash
-pip install matplotlib scipy pyqt5 numpy
-# or, if using python3 explicitly
-pip3 install matplotlib scipy pyqt5 numpy
-```
-
-If you don't have pip installed, see [pip installation guide](https://pip.pypa.io/en/stable/installation/).
-
----
-
-## 💻 Usage
 
 Clone the repository:
 
@@ -79,29 +63,31 @@ git clone https://github.com/RanierPhys/BlackHole_Photography.git
 cd BlackHole_Photography
 ```
 
-Then launch the simulator:
+Install the required packages:
 
 ```bash
-python src/main.py
+pip install matplotlib scipy pyqt5 numpy
+```
+
+If you're using Python 3 with `pip3`:
+
+```bash
+pip3 install matplotlib scipy pyqt5 numpy
 ```
 
 ---
 
-## 📖 Manual
+## ▶️ Usage
 
-We’ve built an intuitive interactive interface so you can focus on the physics:
+Run the main script:
 
-- Select one of our **pre-configured initial conditions** or input your own parameters:
-  - Black hole mass
-  - Photon impact parameter
-  - Observer coordinates and angle
-- The simulation may take up to 30 seconds depending on your settings.
-- You can stop at any time and test different configurations.
-- The **main panel** shows both the geodesic trajectories and the final simulated image.
+```bash
+python codes/Black_hole_photography.py
+```
 
-<p align="center">
-  <img src="images/Print_layout_Pedro_2022.png" width="70%">
-</p>
+The simulator will open an interactive GUI where you can tweak physical parameters and visualize photon trajectories and the resulting black hole image.
+
+For detailed instructions, see [📘 Manual](docs/Manual.md).
 
 ---
 
@@ -109,42 +95,43 @@ We’ve built an intuitive interactive interface so you can focus on the physics
 
 ```
 BlackHole_Photography/
-├── src/
-│   ├── physics/          # Core calculations
-│   │   ├── geodesics.py
-│   │   └── disk_model.py
-│   ├── ui/               # Interface code
-│   │   ├── main_window.py
-│   │   └── widgets.py
-│   └── visualization/    # Plotting tools
-├── data/                 # Simulation outputs
-├── images/               # Example images
-├── requirements.txt      # Dependencies
-└── LICENSE
+├── codes/                # Simulation source code
+│   ├── Black_hole_photography.py
+│   ├── Isoradiciais.ipynb
+│   └── Isoradiciais_fantasma.ipynb
+├── docs/                 # Documentation
+│   ├── Manual.md
+│   └── Theory.md
+├── images/               # Output and UI images
+│   └── simulation_example.png
+├── README.md             # This file
+└── LICENSE               # MIT License
 ```
 
 ---
 
-## 🖼️ Example Results
+## 📷 Example Results
+
+You can generate output images of light bending and shadow formation around black holes using various initial parameters.
 
 <p align="center">
-  <img src="images/simulation_example.png" width="70%">
+  <img src="images/trajectories_9900.png" width="60%">
 </p>
 
 ---
 
-## 👥 Team
+## 👨‍💻 Team
 
 - **Ranier Menote** – Physics modeling  
-- **[Teammate 1]** – UI development  
-- **[Teammate 2]** – Visualization  
-- **Igor Reis**, **Pedro Cintra**, **Felipe Fontinele**, **Vitor Dantas** – Hackathon website and prototype  
+- **Igor Reis** – GUI and PyQt5  
+- **Pedro Cintra** – Accretion disk modeling  
+- **Felipe Fontinele** – Visualization and math  
+- **Vitor Dantas** – Documentation and structure  
 
-Project developed for the McGill Physics Hackathon 2021.  
-Website based on [Jekyll Now](https://github.com/barryclark/jekyll-now) (MIT License).
+This project was developed for the *McGill Physics Hackathon 2021*.
 
 ---
 
-## 📜 License
+## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
