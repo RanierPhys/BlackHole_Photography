@@ -1,1 +1,32 @@
-# BlackHole_Photography
+# Black Hole Photography Simulator
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+<p align="center">
+  <img src="images/simulation_example.png" width="70%">
+  <br><em>Simulated view of a Schwarzschild black hole with thin accretion disk</em>
+</p>
+
+## Table of Contents
+- [Physics Background](#-physics-background)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Repository Structure](#-repository-structure)
+- [Example Results](#-example-results)
+- [Team](#-team)
+- [License](#-license)
+
+## 🌌 Physics Background
+This simulator computes photon trajectories in Schwarzschild spacetime, demonstrating:
+- **Light bending** near the event horizon
+- **Photon sphere** at r = 3GM/c²
+- **Relativistic effects**:
+  - Doppler beaming
+  - Gravitational redshift
+- **Thin accretion disk** physics (Novikov-Thorne model)
+
+The geodesic equations are solved numerically:
+```math
+\frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0
