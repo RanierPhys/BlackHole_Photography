@@ -103,7 +103,10 @@ BlackHole_Photography/
 │   ├── Manual.md
 │   └── Theory.md
 ├── images/               # Output and UI images
-│   └── simulation_example.png
+│   ├── simulation_example.png
+│   .
+│   .
+│   .
 ├── README.md             # This file
 └── LICENSE               # MIT License
 ```
@@ -122,11 +125,11 @@ You can generate output images of light bending and shadow formation around blac
 
 ## 👨‍💻 Team
 
-- **Ranier Menote** – Physics modeling  
-- **Igor Reis** – GUI and PyQt5  
-- **Pedro Cintra** – Accretion disk modeling  
-- **Felipe Fontinele** – Visualization and math  
-- **Vitor Dantas** – Documentation and structure  
+- **Ranier Menote**   
+- **Igor Reis**  
+- **Pedro Cintra**   
+- **Felipe Fontinele**  
+- **Vitor Dantas**  
 
 This project was developed for the *McGill Physics Hackathon 2021*.
 
