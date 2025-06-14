@@ -125,10 +125,10 @@ You can generate output images of light bending and shadow formation around blac
 
 ## 👨‍💻 Team
 
-- **Ranier Menote**   
-- **Igor Reis**  
-- **Pedro Cintra**   
-- **Felipe Fontinele**  
+- **Felipe Fontinele** 
+- **Ranier Menote**    
+- **Pedro Cintra**
+- **Igor Reis** 
 - **Vitor Dantas**  
 
 This project was developed for the *McGill Physics Hackathon 2021*.
