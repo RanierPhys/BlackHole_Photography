@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <p align="center">
-  <img src="images/simulation_example.png" width="70%">
+  <img src="images/gif_accretion_disk.gif" width="70%">
   <br><em>Simulated view of a Schwarzschild black hole with thin accretion disk</em>
 </p>
 
