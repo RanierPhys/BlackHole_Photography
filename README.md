@@ -131,7 +131,7 @@ You can generate output images of light bending and shadow formation around blac
 - **Igor Reis** 
 - **Vitor Dantas**  
 
-This project was developed for the *McGill Physics Hackathon 2021*.
+This project was developed for the *McGill Physics Hackathon 2022*.
 
 ---
 
