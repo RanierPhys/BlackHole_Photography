@@ -30,7 +30,7 @@ This simulator computes photon trajectories in Schwarzschild spacetime, demonstr
 The geodesic equations are solved numerically:
 ```math
 \frac{d^2x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta}\frac{dx^\alpha}{d\lambda}\frac{dx^\beta}{d\lambda} = 0
-
+```
 
 
 🚀 Features
@@ -50,3 +50,30 @@ Export simulation data
 
 🛠️ Installation
 Clone repository:
+
+git clone https://github.com/RanierPhys/BlackHole_Photography.git
+
+
+
+python src/main.py
+
+BlackHole_Photography/
+├── src/
+│   ├── physics/          # Core calculations
+│   │   ├── geodesics.py
+│   │   └── disk_model.py
+│   ├── ui/               # Interface code
+│   │   ├── main_window.py
+│   │   └── widgets.py
+│   └── visualization/    # Plotting tools
+├── data/                 # Simulation outputs
+├── images/               # Example images
+├── requirements.txt      # Dependencies
+└── LICENSE
+
+Team
+Ranier Menote - Physics modeling
+
+[Teammate 1] - UI development
+
+[Teammate 2] - Visualization
